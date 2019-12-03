@@ -15,6 +15,7 @@ nav{
     background: #1ab95f;
     height: 45px;
     line-height: 45px;
+    min-width: 1200px;
 }
 .choose{
     width: 210px;
@@ -40,7 +41,7 @@ nav{
     margin-right: 8px;
 }
 .choose-child{
-    top: 0;
+    top: 45px;
     left: 0;
     position: absolute;
     height: 480px;
@@ -57,6 +58,7 @@ nav>ul>li{
     float: left;
     width: 100px;
     text-align: center;
+    height: 45px;
     position: relative;
 }
 nav>ul>li:hover{
@@ -83,6 +85,8 @@ nav>ul>li a:hover{
     height: 480px;
     overflow: hidden;
     position: relative;
+    width: 100%;
+    min-width: 1200px;
 }
 .banner-img{
     
@@ -94,16 +98,23 @@ nav>ul>li a:hover{
 }
 .banner-img>li.show-item{
     display: list-item;
+    
 }
 .banner-img>li:nth-child(1){
-    background: url(../img/banner/banner1.jpg) 50% 50%;
+    background: url(../img/banner/banner1.jpg) 50% 50% / cover;
 }
 .banner-img>li:nth-child(2){
-    background: url(../img/banner/banner2.jpg) 50% 50%;
+    background: url(../img/banner/banner2.jpg) 50% 50% / cover;
 }
 .banner-img>li:nth-child(3){
-    background: url(../img/banner/banner3.jpg) 50% 50%;
+    background: url(../img/banner/banner3.jpg) 50% 50% / cover ;
 }
 .banner-img>li:nth-child(4){
-    background: url(../img/banner/banner4.jpg) 50% 50%;
+    background: url(../img/banner/banner4.jpg) 50% 50% / cover;
+}
+
+/* content start */
+.content{
+    width: 1200px;
+    margin: auto;
 }
