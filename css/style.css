@@ -178,13 +178,19 @@ nav>ul>li a:hover{
     transition: .3s;
     cursor: pointer;
 }
-.title-blue li:hover{
+/* .title-blue li:hover{
     background: #4d9be6;
-}
+} */
 .title-blue li.active{
     background: #4d9be6;
 }
 /* 新闻列表样式 */
+.news-item{
+    display: none;
+}
+.news-item.show{
+    display: block;
+}
 .news-itembox{
     margin-top: 20px;
     position: relative;
