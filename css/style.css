@@ -111,6 +111,17 @@ nav>ul>li a:hover{
     background: url(../img/banner/banner4.jpg) 50% 50% / cover;
 }
 
+.triangle{
+    width: 0; 
+    height: 0;
+    border-width:4px 4px 4px 6px;
+    border-style: solid;
+    border-color: transparent  transparent transparent #2472bb;
+    position: absolute;
+    top: 7px;
+    right: -10px;
+}
+
 /* content start */
 .content{
     width: 1200px;
@@ -130,7 +141,17 @@ nav>ul>li a:hover{
     height: 2px;
     background: #9a9fa3;
 }
-
+.content .type{
+    position: relative;
+    width: 74px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    background: #2472bb;
+    font-size: 14px;
+    border-radius: 4px;
+}
 /* 新闻资讯 news */
 .news{
     width: 780px;
@@ -146,6 +167,7 @@ nav>ul>li a:hover{
     line-height: 38px;
     background: #2472bb;
     margin-top: 6px;
+    padding-left: 150px;
 }
 .title-blue ul li{
     float: left;
@@ -162,7 +184,60 @@ nav>ul>li a:hover{
 .title-blue li.active{
     background: #4d9be6;
 }
-
+/* 新闻列表样式 */
+.news-itembox{
+    margin-top: 20px;
+    position: relative;
+}
+.news-title{
+    font-size: 16px;
+    color: #333;
+    margin-left: 20px;
+    max-width: 580px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.news-title:hover{
+    color: #2472bb;
+}
+.news-time{
+    font-size: 12px;
+    line-height: 24px;
+    margin-left: 20px;
+}
+.first{
+    padding-left: 95px;
+}
+.first-time{
+    position: absolute;
+    left: 0;
+    width: 78px;
+    height: 78px;
+    border: 1px solid #e8e8e8;
+    background: #f6f6f6;
+    text-align: center;
+}
+.first-time p:first-child{
+    color: #97ca28;
+    font-size: 48px;
+}
+.first-time p:last-child{
+    color: #999;
+}
+.first .news-title{
+    margin: 0;
+    line-height: 30px;
+}
+.first-content{
+    line-height: 24px;
+    color: #999;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /*截取两行*/
+    overflow: hidden;
+}
 /* 学习服务 study */
 .study{
     width: 400px;
@@ -207,8 +282,40 @@ nav>ul>li a:hover{
     top: 35px;
     left: 35px;
 }
-.study-enter p{
-    
+
+/* 师资介绍 */
+.teacher-course{
+    margin-left: 15px;
+}
+.teacher-course li{
+    float: left;
+    font-size: 16px;
+    color:#2472bb;
+    height: 48px;
+    width: 82px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    line-height: 48px;
+}
+.more-btn{
+    font-size: 16px;
+    line-height: 50px;
+}
+.more-btn:hover{
+    text-decoration: none;
+    color: #2472bb;
+}
+
+/* 中间图片导航 img-nav*/
+.img-nav{
+    margin: 40px 0;
+}
+.img-box{
+    width: 780px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
 }
 /* 服务热线 phone-num */
 
