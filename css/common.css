@@ -106,11 +106,10 @@ table {
 /* 浮动 */
 
 .clearfix:after {
-    content: ".";
+    content: "";
     display: block;
-    height: 0;
     clear: both;
-    visibility: hidden;
+
 }
 .left{
     float: left;
