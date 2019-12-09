@@ -68,7 +68,7 @@ nav>ul>li+li{
     margin: 0 3px;
     cursor: pointer;
 }
-li.active{
+nav li.active{
     background: #2eea80;
 }
 nav>ul>li a{
@@ -188,9 +188,6 @@ nav>ul>li a:hover{
 .news-item{
     display: none;
 }
-.news-item.show{
-    display: block;
-}
 .news-itembox{
     margin-top: 20px;
     position: relative;
@@ -304,6 +301,15 @@ nav>ul>li a:hover{
     position: relative;
     line-height: 48px;
 }
+.teacher-course li img{
+    position: absolute;
+    display: none;
+    bottom: -12px;
+    left: 0;
+}
+.teacher-course li.active img{
+    display: block;
+}
 .more-btn{
     font-size: 16px;
     line-height: 50px;
@@ -315,6 +321,9 @@ nav>ul>li a:hover{
 
 .teacher-item{
     margin-top: 20px;
+}
+.teacher-item>div{
+    display: none;
 }
 .teacher-item ul li{
     float: left;
