@@ -463,8 +463,55 @@
                 <a href="" class="more-btn right">查看更多>></a>
             </div>
             <div class="line"></div>
-            <div class="teacher-item">
-
+            <div class="teacher-item clearfix">
+                <ul>
+                    <li>
+                        <p class="left teacher-img"><img src="./img/teacher/2017042458fdc730ec4f1.jpg" alt=""></p>
+                        <div class="left teacher-text">
+                            <p class="name">方老师</p>
+                            <p class="course"><span>授课科目：</span>语文</p>
+                            <p class="grade"><span>授课学段：</span>中学</p>
+                            <p class="special"><span>教学特色：</span>注重学生兴趣和学习能力的培养，擅长挖掘学生的学习潜力，培训人次超过8000人，超过500人次被成都重点中学...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="left teacher-img"><img src="./img/teacher/2017042458fdc730ec4f1.jpg" alt=""></p>
+                        <div class="left teacher-text">
+                            <p class="name">方老师</p>
+                            <p class="course"><span>授课科目：</span>语文</p>
+                            <p class="grade"><span>授课学段：</span>中学</p>
+                            <p class="special"><span>教学特色：</span>注重学生兴趣和学习能力的培养，擅长挖掘学生的学习潜力，培训人次超过8000人，超过500人次被成都重点中学...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="left teacher-img"><img src="./img/teacher/2017042458fdc730ec4f1.jpg" alt=""></p>
+                        <div class="left teacher-text">
+                            <p class="name">方老师</p>
+                            <p class="course"><span>授课科目：</span>语文</p>
+                            <p class="grade"><span>授课学段：</span>中学</p>
+                            <p class="special"><span>教学特色：</span>注重学生兴趣和学习能力的培养，擅长挖掘学生的学习潜力，培训人次超过8000人，超过500人次被成都重点中学...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="left teacher-img"><img src="./img/teacher/2017042458fdc730ec4f1.jpg" alt=""></p>
+                        <div class="left teacher-text">
+                            <p class="name">方老师</p>
+                            <p class="course"><span>授课科目：</span>语文</p>
+                            <p class="grade"><span>授课学段：</span>中学</p>
+                            <p class="special"><span>教学特色：</span>注重学生兴趣和学习能力的培养，擅长挖掘学生的学习潜力，培训人次超过8000人，超过500人次被成都重点中学...</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="left teacher-img"><img src="./img/teacher/2017042458fdc730ec4f1.jpg" alt=""></p>
+                        <div class="left teacher-text">
+                            <p class="name">方老师</p>
+                            <p class="course"><span>授课科目：</span>语文</p>
+                            <p class="grade"><span>授课学段：</span>中学</p>
+                            <p class="special"><span>教学特色：</span>注重学生兴趣和学习能力的培养，擅长挖掘学生的学习潜力，培训人次超过8000人，超过500人次被成都重点中学...</p>
+                        </div>
+                    </li>
+                     
+                </ul>
             </div>
         </div>
         <div class="img-nav clearfix">
@@ -562,22 +609,20 @@
     }
     // tabs切换
     const tabs = function () {
-            var _tab = $('.tabs li');
-            var _con = $('.tabs-item>div');
-            var _index = 0;
-            _tab.mouseover(function () {
-                _index = _tab.index(this);
-                $(this).addClass('active').siblings().removeClass('active');
-                _con.filter(':visible').stop(true, true).fadeOut(300, function () {
-                    _con.eq(_index).fadeIn(300)
-                })
-            });
+        var _tab = $('.tabs li');
+        var _con = $('.tabs-item>div');
+        var _index = 0;
+        _tab.mouseover(function () {
+            _index = _tab.index(this);
+            $(this).addClass('active').siblings().removeClass('active');
+            _con.filter(':visible').stop(true, true).fadeOut(300, function () {
+                _con.eq(_index).fadeIn(300)
+            })
+        });
     }
     // 可以作为公共的tabs标签效果，标题必须是li标签，给li的父级绑定class ".tabs"，显示内容为div元素，用一个父级div包裹，绑定class ".tabs-item"
     tabs();
     bannerAction();
-
-
 </script>
 
 </html>

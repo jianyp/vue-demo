@@ -313,6 +313,53 @@ nav>ul>li a:hover{
     color: #2472bb;
 }
 
+.teacher-item{
+    margin-top: 20px;
+}
+.teacher-item ul li{
+    float: left;
+    margin-bottom:20px;
+}
+.teacher-item ul li:nth-child(3n-1){
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.teacher-img{
+    width: 122px;
+    height: 174px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.teacher-img img{
+    width:100%;
+    vertical-align:middle;
+    height: 174px;
+}
+.teacher-text{
+    width: 250px;
+    margin: 10px 0 0 10px;
+}
+.teacher-text .name{
+    font-size: 18px;
+    color: #000;
+}
+.teacher-text p span{
+    font-weight: bold;
+    font-size: 14px;
+    color: #666;
+}
+.teacher-text .special{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /*截取两行*/
+    overflow: hidden;
+}
+.name{
+    
+}
+.course,.grade,.special{
+    line-height: 24px;
+}
 /* 中间图片导航 img-nav*/
 .img-nav{
     margin: 40px 0;
