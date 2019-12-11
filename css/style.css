@@ -3,13 +3,48 @@ header{
     width: 1200px;
     margin: 0 auto;
 }
+.logo{
+    padding-top: 14px;
+}
+.header-phone{
+    padding-top: 14px;
+}
 .header-img{
     text-align: center;
 }
 .header-main{
     padding: 10px 0;
+    margin-bottom: 10px;
 }
-
+.search-box{
+    padding: 0 100px;
+}
+.search input{
+    width: 380px;
+    height: 40px;
+    border: 2px solid #2472bb;
+    text-indent:14px;
+    float: left;
+}
+.recommend{
+    margin-bottom: 5px;
+}
+.recommend a{
+    color: #a5a5a5;
+    margin-right: 8px;
+    font-size: 12px;
+}
+.search .serach-btn{
+    background: #2472bb;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    width: 86px;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    float: left;
+}
 /* nav  start */
 nav{
     background: #1ab95f;
@@ -49,7 +84,59 @@ nav{
     z-index: 999;
     width: 210px;
 }
+.choose-child li{
+    height: 120px;
+    border-bottom: 1px solid #1360a9;
+    padding-left: 36px;
+    padding-right: 8px;
+}
+.choose-child li .more{
+    color: #8cb3d8;
+    font-size: 16px;
+}
+.choose-child li:hover{
+    background: #2472bb;
+}
+.choose-child li:hover .choose-child-detail{
+    display: block;
+}
+.choose-child-item>p:nth-child(2){
+    line-height: 30px;
+}
+.choose-child-item>p:nth-child(2) a{
+    color: #8cb3d8;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.choose-child-item>p:nth-child(2) a:nth-child(3n){
+    margin-right: 0px;
+}
+.choose-child-detail{
+    position: absolute;
+    width: 700px;
+    height: 480px;
+    top: 0px;
+    left: 210px;
+    z-index: 999;
+    background: rgba(255, 255, 255, .9);
+    padding: 0 36px;
+    display: none;
+    color: #000;
+}
+.choose-child-detail .detail-item{
+    border-bottom: 1px solid #bcbcbc;
+}
 
+.detail-item a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.detail-item .title{
+    color: #1360a9;
+    font-weight: bold;
+    margin-right: 36px;
+}
 nav>ul{
     width: 1200px;
     margin: 0 auto;
@@ -78,7 +165,32 @@ nav>ul>li a{
 nav>ul>li a:hover{
     text-decoration: none;
 }
-
+nav>ul>li .triangle-green{
+    display: none;
+}
+nav>ul>li:hover .triangle-green{
+    display: block;
+}
+nav>ul>li.active .triangle-green{
+    display: block;
+}
+/* nav>ul>li:hover .nav-child{
+    display: block;
+} */
+.nav-child{
+    position: absolute;
+    z-index: 999;
+    width: 100px;
+    background: #1ab95f;
+    top: 45px;
+    color: #fff;
+    font-size: 16px;
+    display: none;
+}
+.nav-child dd:hover{
+    background: #2eea80;
+    
+}
 /* banner  start */
 .banner{
     margin: 0 auto;
@@ -110,6 +222,34 @@ nav>ul>li a:hover{
 .banner-img>li:nth-child(4){
     background: url(../img/banner/banner4.jpg) 50% 50% / cover;
 }
+.banner-list{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.banner-list ul{
+    display: inline-block;
+}
+.banner-list li{
+    float: left;
+    color: #333;
+    margin:0 3px;
+    background: rgba(255, 255, 255, .8);
+    font-size: 12px;
+    height: 30px;
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 30px;
+    transition: .3s;
+    overflow: hidden;
+}
+.banner-list li.active{
+    background: #0e4f8d;
+    color: #ffff;
+}
 
 .triangle{
     width: 0; 
@@ -120,6 +260,28 @@ nav>ul>li a:hover{
     position: absolute;
     top: 7px;
     right: -10px;
+}
+.triangle-green{
+    width: 0; 
+    height: 0;
+    border-width:10px 7px 7px 7px;
+    border-style: solid;
+    border-color:#2eea80 transparent  transparent transparent ;
+    position: absolute;
+    bottom: -17px;
+    left: 46px;
+    z-index: 2;
+}
+.triangle-blue{
+    width: 0; 
+    height: 0;
+    border-width:10px 7px 7px 7px;
+    border-style: solid;
+    border-color:#4d9be6 transparent  transparent transparent ;
+    position: absolute;
+    bottom: -15px;
+    left: 46px;
+    z-index: 2;
 }
 
 /* content start */
@@ -177,6 +339,13 @@ nav>ul>li a:hover{
     text-align: center;
     transition: .3s;
     cursor: pointer;
+    position: relative;
+}
+.title-blue ul li .triangle-blue{
+    display: none;
+}
+.title-blue ul li.active .triangle-blue{
+    display: block;
 }
 /* .title-blue li:hover{
     background: #4d9be6;
@@ -363,9 +532,7 @@ nav>ul>li a:hover{
     -webkit-line-clamp: 4; /*截取两行*/
     overflow: hidden;
 }
-.name{
-    
-}
+
 .course,.grade,.special{
     line-height: 24px;
 }
@@ -379,6 +546,69 @@ nav>ul>li a:hover{
     cursor: pointer;
     justify-content: space-between;
 }
+
+.sm-banner{
+    width: 400px;
+    height: 190px;
+    position: relative;
+}
+.sm-banner-img li{
+    position: absolute;
+}
+.sm-banner-img li img{
+    width: 100%;
+    height: auto;
+}
+.sm-banner-list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    padding: 36px 0 0 0;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+}
+.sm-banner-list>ul{
+    display: inline-block;
+}
+.sm-banner-list>ul>li{
+    width:8px;
+    height: 8px;
+    border-radius: 100%;
+    float: left;
+    margin: 3px;
+    background: #fff;
+}
+.sm-banner-list>ul>li.active{
+    background: #2472bb;
+}
+.sm-banner-list>ul>li.active span,.sm-banner-list>ul>li.active a{
+    display: block;
+}
+.sm-banner-list>ul>li>span{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    font-size: 18px;
+    color: #fff;
+    display: none;
+}
+.sm-banner-list>ul>li>a{
+    position: absolute;
+    top: 14px;
+    background: #ff7e00;
+    right: 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    width: 77px;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    display: none;
+}
+
 /* 服务热线 phone-num */
 
 .phone-item{
@@ -395,11 +625,7 @@ nav>ul>li a:hover{
     margin-left: 10px;
 }
 /* 友情链接 link */
-.content .link .title{
-    /* width: 120px;
-    height: 50px;
-    line-height: 50px; */
-}
+
 .link .fg{
     background: #666;
 }
@@ -411,6 +637,7 @@ nav>ul>li a:hover{
     background: #454545;
     margin-top: 20px;
     padding-top: 30px;
+    min-width: 1200px;
 }
 .footer-container{
     width: 1200px;
@@ -431,6 +658,15 @@ nav>ul>li a:hover{
     display: inline-block;
     vertical-align:-2px;
     margin: 0 5px;
+}
+.fg-orange{
+    width: 4px;
+    height: 18px;
+    display: inline-block;
+    vertical-align:-2px;
+    margin: 0 8px 0 0;
+    background: #ea7900;
+    vertical-align:-3px;
 }
 .footer-icp{
     margin-bottom: 18px;
