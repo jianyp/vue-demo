@@ -20,22 +20,75 @@
             <img src="./img/image/201808295b866527d08d7.jpg" alt="">
         </div>
         <div class="header-main">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
+            <div class="row clearfix">
+                <div class="col-xl-4 col-lg-6">
                     <div class="left logo">
                         <img src=".//img/image/logo.png" alt="">
                     </div>
+                    <!-- 小屏访问导航 -->
+                    <div class="mini-nav right">
+                        <div class="menu">
+                            <p></p>
+                        </div>
+                        <ul class="mini-nav-menu">
+                            <li class="active"><a href="javascript:;">首页</a></li>
+                            <li><a href="javascript:;">小学</a></li>
+                            <li><a href="javascript:;">初中</a></li>
+                            <li><a href="javascript:;">高中</a></li>
+                            <li><a href="javascript:;">Live互动英语</a></li>
+                            <li><a href="javascript:;">教师团队</a><span class="more-child"></span>
+                                <dl class="mini-nav-child">
+                                    <dd>语文</dd>
+                                    <dd>数学</dd>
+                                    <dd>英语</dd>
+                                    <dd>物理</dd>
+                                    <dd>化学</dd>
+                                    <dd>历史</dd>
+                                    <dd>生物</dd>
+                                </dl>
+                            </li>
+                            <li><a href="javascript:;">优生榜样</a><span class="more-child"></span>
+                                <dl class="mini-nav-child">
+                                    <dd>小学</dd>
+                                    <dd>中考</dd>
+                                    <dd>高考</dd>
+                                </dl>
+                            </li>
+                            <li><a href="javascript:;">新闻资讯</a><span class="more-child"></span>
+                                <dl class="mini-nav-child">
+                                    <dd>九思动态</dd>
+                                    <dd>优惠活动</dd>
+                                    <dd>招生快讯</dd>
+                                    <dd>素质教育</dd>
+                                    <dd>小学资讯</dd>
+                                    <dd>中考资讯</dd>
+                                    <dd>家庭教育</dd>
+                                </dl>
+                            </li>
+                            <li><a href="javascript:;">关于九思</a><span class="more-child"></span>
+                                <dl class="mini-nav-child">
+                                    <dd>九思介绍</dd>
+                                    <dd>企业文化</dd>
+                                    <dd>报班指南</dd>
+                                    <dd>加入九思</dd>
+                                    <dd>在线咨询</dd>
+                                    <dd>联系我们</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <div class="cover-div"></div>
+                    </div>
                 </div>
-                <div class="col-lg-5 col-md-6">
+                <div class="col-xl-5 col-lg-6">
                     <div class="left search-box">
                         <p class="recommend"><a href="">数学</a><a href="">语文</a><a href="">秋季</a><a href="">暑假</a></p>
                         <div class="search clearfix">
-                            <input type="text" placeholder="请输入您要搜索的课程、班号、班次或上课地点" />
+                            <input type="text" placeholder="请输入您要搜索的内容" />
                             <a class="serach-btn" href="">搜索</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3  col-md-12 phone">
+                <div class="col-xl-3  col-lg-12 phone">
                     <div class="right header-phone">
                         <img src="./img/image/phone.jpg" alt="">
                     </div>
@@ -43,6 +96,7 @@
             </div>
         </div>
     </header>
+    <!-- nav 主体导航 -->
     <nav>
         <ul class="clearfix">
             <div class="choose left">
@@ -194,8 +248,293 @@
             </li>
         </ul>
     </nav>
+    <!-- banner -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- 指示符 -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- 轮播图片 -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/banner/banner1.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/banner/banner2.jpg">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/banner/banner3.jpg">
+            </div>
+        </div>
+        <!-- 左右切换按钮 -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <!-- content 主体内容区域 -->
+    <div class="content row">
+        <div class="col-xl-8 col-md-12">
+            <div class="news left clearfix">
+                <div class="title-blue">
+                    <div class="title left">新闻咨讯</div>
+                    <ul class="news-nav clearfix tabs">
+                        <li>九思动态<span class="triangle-blue"></span></li>
+                        <li>优惠活动<span class="triangle-blue"></span></li>
+                        <li>招生快讯<span class="triangle-blue"></span></li>
+                        <li>素质教育<span class="triangle-blue"></span></li>
+                        <li>小学资讯<span class="triangle-blue"></span></li>
+                        <li>中高考资讯<span class="triangle-blue"></span></li>
+                    </ul>
+                </div>
+                <div class="news-content">
+                    <div class="news-item show">
+                        <div class="news-itembox first">
+                            <div class="first-time">
+                                <p>21</p>
+                                <p>2019-11</p>
+                            </div>
+                            <div class="news-title">
+                                招生简章 | 嘉祥系学校2019招生汇总
+                            </div>
+                            <div class="first-content">
+                                成都嘉祥外国语锦江小学 招生计划 学校计划招收8个班，每班40人，共计320人 招生流程 信息公布：5月20日——24日 开展登记：5月28日——29日 面谈时间：6月1日
+                                入学名单公布：6月10日 办理入学报到手续：8月
+                            </div>
+                        </div>
+                        <div class="news-itembox clearfix">
+                            <div class="type left">
+                                九思动态
+                                <span class="triangle"></span>
+                            </div>
+                            <div class="news-title left">领票须知丨2019四川省第二届家庭教育高峰论坛</div>
+                            <div class="news-time left">2019-11-21</div>
+                        </div>
+                       
+                    </div>
+                    <div class="news-item">
+                        <div class="news-itembox first">
+                            <div class="first-time">
+                                <p>21</p>
+                                <p>2019-11</p>
+                            </div>
+                            <div class="news-title">
+                                招生简章 | 嘉祥系学校2019招生汇总
+                            </div>
+                            <div class="first-content">
+                                成都嘉祥外国语锦江小学 招生计划 学校计划招收8个班，每班40人，共计320人 招生流程 信息公布：5月20日——24日 开展登记：5月28日——29日 面谈时间：6月1日
+                                入学名单公布：6月10日 办理入学报到手续：8月
+                            </div>
+                        </div>
+                        <div class="news-itembox clearfix">
+                            <div class="type left">
+                                优惠活动
+                                <span class="triangle"></span>
+                            </div>
+                            <div class="news-title left">领票须知丨2019四川省第二届家庭教育高峰论坛</div>
+                            <div class="news-time left">2019-11-21</div>
+                        </div>
+                       
+                    </div>
+                    <div class="news-item">
+                        <div class="news-itembox first">
+                            <div class="first-time">
+                                <p>21</p>
+                                <p>2019-11</p>
+                            </div>
+                            <div class="news-title">
+                                招生简章 | 嘉祥系学校2019招生汇总
+                            </div>
+                            <div class="first-content">
+                                成都嘉祥外国语锦江小学 招生计划 学校计划招收8个班，每班40人，共计320人 招生流程 信息公布：5月20日——24日 开展登记：5月28日——29日 面谈时间：6月1日
+                                入学名单公布：6月10日 办理入学报到手续：8月
+                            </div>
+                        </div>
+                        <div class="news-itembox clearfix">
+                            <div class="type left">
+                                招生快讯
+                                <span class="triangle"></span>
+                            </div>
+                            <div class="news-title left">领票须知丨2019四川省第二届家庭教育高峰论坛</div>
+                            <div class="news-time left">2019-11-21</div>
+                        </div>
+                       
+                    </div>
+                    <div class="news-item">
+                        <div class="news-itembox first">
+                            <div class="first-time">
+                                <p>21</p>
+                                <p>2019-11</p>
+                            </div>
+                            <div class="news-title">
+                                招生简章 | 嘉祥系学校2019招生汇总
+                            </div>
+                            <div class="first-content">
+                                成都嘉祥外国语锦江小学 招生计划 学校计划招收8个班，每班40人，共计320人 招生流程 信息公布：5月20日——24日 开展登记：5月28日——29日 面谈时间：6月1日
+                                入学名单公布：6月10日 办理入学报到手续：8月
+                            </div>
+                        </div>
+                        <div class="news-itembox clearfix">
+                            <div class="type left">
+                                素质教育
+                                <span class="triangle"></span>
+                            </div>
+                            <div class="news-title left">领票须知丨2019四川省第二届家庭教育高峰论坛</div>
+                            <div class="news-time left">2019-11-21</div>
+                        </div>
+                        
+                    </div>
+                    <div class="news-item">
+                        <div class="news-itembox first">
+                            <div class="first-time">
+                                <p>21</p>
+                                <p>2019-11</p>
+                            </div>
+                            <div class="news-title">
+                                招生简章 | 嘉祥系学校2019招生汇总
+                            </div>
+                            <div class="first-content">
+                                成都嘉祥外国语锦江小学 招生计划 学校计划招收8个班，每班40人，共计320人 招生流程 信息公布：5月20日——24日 开展登记：5月28日——29日 面谈时间：6月1日
+                                入学名单公布：6月10日 办理入学报到手续：8月
+                            </div>
+                        </div>
+                        <div class="news-itembox clearfix">
+                            <div class="type left">
+                                小学资讯
+                                <span class="triangle"></span>
+                            </div>
+                            <div class="news-title left">领票须知丨2019四川省第二届家庭教育高峰论坛</div>
+                            <div class="news-time left">2019-11-21</div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-itembox first">
+                            <div class="first-time">
+                                <p>21</p>
+                                <p>2019-11</p>
+                            </div>
+                            <div class="news-title">
+                                招生简章 | 嘉祥系学校2019招生汇总
+                            </div>
+                            <div class="first-content">
+                                成都嘉祥外国语锦江小学 招生计划 学校计划招收8个班，每班40人，共计320人 招生流程 信息公布：5月20日——24日 开展登记：5月28日——29日 面谈时间：6月1日
+                                入学名单公布：6月10日 办理入学报到手续：8月
+                            </div>
+                        </div>
+                        <div class="news-itembox clearfix">
+                            <div class="type left">
+                                中高考资讯
+                                <span class="triangle"></span>
+                            </div>
+                            <div class="news-title left">领票须知丨2019四川省第二届家庭教育高峰论坛</div>
+                            <div class="news-time left">2019-11-21</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="mini-more-btn">查看更多新闻</div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-12">
+            <div class="study clearfix">
+                <div class="title-blue">
+                    <div class="title left">学习服务</div>
+                    <ul class="title-blue clearfix"></ul>
+                </div>
+                <div class="study-item">
+                    <ul class="study-enter">
+                        <li>
+                            在线报名
+                            <img class="normal" src="./img/icon/icon_1.png" alt="">
+                            <img class="active" src="./img/icon/icon_7.png" alt="">
+                        </li>
+                        <li>
+                            报名指南
+                            <img class="normal" src="./img/icon/icon_2.png" alt="">
+                            <img class="active" src="./img/icon/icon_8.png" alt="">
+                        </li>
+                        <li>
+                            入学测试
+                            <img class="normal" src="./img/icon/icon_3.png" alt="">
+                            <img class="active" src="./img/icon/icon_9.png" alt="">
+                        </li>
+                        <li>
+                            暑秋日历
+                            <img class="normal" src="./img/icon/icon_4.png" alt="">
+                            <img class="active" src="./img/icon/icon_10.png" alt="">
+                        </li>
+                        <li>
+                            活动报名
+                            <img class="normal" src="./img/icon/icon_5.png" alt="">
+                            <img class="active" src="./img/icon/icon_11.png" alt="">
+                        </li>
+                        <li>
+                            投诉建议
+                            <img class="normal" src="./img/icon/icon_6.png" alt="">
+                            <img class="active" src="./img/icon/icon_12.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-container clearfix">
+            <p class="footer-link">
+                <a href="javascript:;">返回首页</a>
+                <span class="fg"></span>
+                <a href="javascript:;">合作专区</a>
+                <span class="fg"></span>
+                <a href="javascript:;">加入九思</a>
+                <span class="fg"></span>
+                <a href="javascript:;">联系我们</a>
+            </p>
+            <p class="footer-icp">
+                <span>
+                    备案许可证编号:蜀ICP备18038020号,©2014 All rights reserved:Redyears Intelligent Co,成都市锦江区嘉祥九思教育培训学校责任有限公司　版权所有
+                </span>
+                <span>
+                    技术支持：
+                </span>
+                <a href="">成都维途睿境教育科技有限公司</a>
+            </p>
+            <hr>
+            <!-- <p class="footer-qun">
+                <span>【九思小学群】413693028</span>
+                <span>【圆梦初中群】107177628</span>
+                <span>【助力高中群】556350586</span>
+            </p> -->
+            <div class="row footer-qun">
+                <div class="col-md-3">
+                    【九思小学群】413693028
+                </div>
+                <div class="col-md-3">
+                    【圆梦初中群】107177628
+                </div>
+                <div class="col-md-3">
+                    【助力高中群】556350586
+                </div>
+            </div>
+            <p class="wx-code right">
+                <img src="./img/image/pic21.jpg" alt="">
+                官方微信
+            </p>
+        </div>
+    </div>
 </body>
 <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"
+    integrity="sha384-L2pyEeut/H3mtgCBaUNw7KWzp5n9+4pDQiExs933/5QfaTh8YStYFFkOzSoXjlTb"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 <script src="./js/main.js"></script>
 <script>
     // 新闻标签页
@@ -209,6 +548,26 @@
     // 导航展开二级菜单动画
     $("nav>ul>li").hover(function () {
         $(this).children(".nav-child").stop().slideToggle(200);
+    })
+    $(".mini-nav-menu li").click(function (e) {
+        event.stopPropagation();
+        $(".mini-nav-child").slideUp(200);
+
+        if ($(this).children(".more-child").hasClass("rotate")) {
+            $(this).children(".more-child").removeClass("rotate");
+        } else {
+            $(".more-child").removeClass("rotate");
+            $(this).children(".more-child").addClass("rotate");
+        }
+        $(this).children(".mini-nav-child").stop().slideToggle(200);
+    })
+    $(".cover-div").click(function () {
+        $(this).fadeOut();
+        $(".mini-nav-menu").css("left", "100%");
+    })
+    $(".mini-nav .menu").click(function () {
+        $(".cover-div").fadeIn();
+        $(".mini-nav-menu").css("left", "30%");
     })
 </script>
 

@@ -1,23 +1,50 @@
 @media screen and (max-width:1920px){
     
+    .carousel-inner .carousel-item img{
+        margin-top: -20px;
+    }
 }
 @media screen and (max-width:1200px){
     .choose{
         display: none;
     }
-}
-@media screen and (max-width:992px){
     .phone{
         display: none;
     }
-    .row{
+    header .row{
         padding-left: 30px;
     }
-    
+    .footer-link{
+        text-align: center;
+    }
+    .footer-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:992px){
     .header-img{
         display: none;
     }
+    .mini-nav{
+        display: block;
+    }
+    nav{
+       display: none;
+    }
+    .header-main .logo{
+       margin-top: 0;
+    }
+    .search-box{
+       margin-top: 10px;
+    }
+    .news-nav li{
+        display: none;
+    }
+    .mini-more-btn{
+        display: block;
+    }
+}
+@media screen and (max-width:768px){
    
 }
