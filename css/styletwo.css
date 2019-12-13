@@ -452,7 +452,7 @@ nav>ul>li.active .triangle-green{
     overflow: hidden;
 }
 .mini-more-btn{
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     display: none;
     text-align: center;
@@ -519,6 +519,7 @@ nav>ul>li.active .triangle-green{
 }
 .teacher-course{
     margin-left: 15px;
+    margin-top: 4px;
 }
 .teacher-course li{
     float: left;
@@ -550,18 +551,21 @@ nav>ul>li.active .triangle-green{
 }
 
 .teacher-item{
-    margin-top: 20px;
 }
 .teacher-item>div{
     display: none;
 }
-.teacher-item ul li{
-    float: left;
+/* .teacher-item ul li{
     margin-bottom:20px;
-}
-.teacher-item ul li:nth-child(3n-1){
+    display: flex;
+} */
+/* .teacher-item ul li:nth-child(3n-1){
     margin-left: 20px;
     margin-right: 20px;
+} */
+.teacher-item .item-content{
+    display: flex;
+    padding-top: 20px;
 }
 .teacher-img{
     width: 122px;
@@ -575,8 +579,8 @@ nav>ul>li.active .triangle-green{
     height: 174px;
 }
 .teacher-text{
-    width: 250px;
     margin: 10px 0 0 10px;
+    flex: 1;
 }
 .teacher-text .name{
     font-size: 18px;
@@ -590,7 +594,7 @@ nav>ul>li.active .triangle-green{
 .teacher-text .special{
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4; /*截取两行*/
+    -webkit-line-clamp: 4; 
     overflow: hidden;
 }
 
@@ -598,10 +602,72 @@ nav>ul>li.active .triangle-green{
     line-height: 24px;
 }
 
+/* 专题教育 */
+.img-nav{
+    margin: 40px 0;
+}
 
-
-
-
+.sm-banner{
+    width: 400px;
+    height: 190px;
+    position: relative;
+}
+.sm-banner-img li{
+    position: absolute;
+}
+.sm-banner-img li img{
+    width: 100%;
+    height: auto;
+}
+.sm-banner-list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    padding: 36px 0 0 0;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+}
+.sm-banner-list>ul{
+    display: inline-block;
+}
+.sm-banner-list>ul>li{
+    width:8px;
+    height: 8px;
+    border-radius: 100%;
+    float: left;
+    margin: 3px;
+    background: #fff;
+}
+.sm-banner-list>ul>li.active{
+    background: #2472bb;
+}
+.sm-banner-list>ul>li.active span,.sm-banner-list>ul>li.active a{
+    display: block;
+}
+.sm-banner-list>ul>li>span{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    font-size: 18px;
+    color: #fff;
+    display: none;
+}
+.sm-banner-list>ul>li>a{
+    position: absolute;
+    top: 14px;
+    background: #ff7e00;
+    right: 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    width: 77px;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    display: none;
+}
 
 
 /* footer start */

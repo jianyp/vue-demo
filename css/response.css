@@ -17,12 +17,22 @@
     header .row{
         padding-left: 30px;
     }
+    .row{
+        width: 100%;
+    }
+    
     .footer-link{
         text-align: center;
     }
     .footer-container{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .news,.study,.teacher{
+        padding-left: 30px;
+    }
+    .teacher{
+        padding-right: 30px;
     }
 }
 @media screen and (max-width:992px){
@@ -47,9 +57,16 @@
     .mini-more-btn{
         display: block;
     }
-    .news,.study,.teacher{
-        padding-left: 30px;
+    .teacher-course{
+        display: none;
     }
+    .teacher .more-btn{
+        display: none;
+    }
+    .teacher .title{
+        width: 100%;
+    }
+    
 }
 @media screen and (max-width:768px){
     
