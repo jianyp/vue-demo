@@ -337,6 +337,7 @@ nav>ul>li.active .triangle-green{
 .content .line{
     height: 2px;
     background: #9a9fa3;
+    width: 100%;
 }
 .content .type{
     position: relative;
@@ -390,6 +391,9 @@ nav>ul>li.active .triangle-green{
     background: #4d9be6;
 }
 /* 新闻列表样式 */
+.news-nav{
+    width: 100%;
+}
 .news-item{
     display: none;
 }
@@ -430,6 +434,7 @@ nav>ul>li.active .triangle-green{
 .first-time p:first-child{
     color: #97ca28;
     font-size: 48px;
+    line-height: 52px;
 }
 .first-time p:last-child{
     color: #999;
@@ -508,7 +513,90 @@ nav>ul>li.active .triangle-green{
     left: 35px;
 }
 
+/* 师资介绍 */
+.teacher{
+    width: 100%;
+}
+.teacher-course{
+    margin-left: 15px;
+}
+.teacher-course li{
+    float: left;
+    font-size: 16px;
+    color:#2472bb;
+    height: 48px;
+    width: 82px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    line-height: 48px;
+}
+.teacher-course li img{
+    position: absolute;
+    display: none;
+    bottom: -12px;
+    left: 0;
+}
+.teacher-course li.active img{
+    display: block;
+}
+.more-btn{
+    font-size: 16px;
+    line-height: 50px;
+}
+.more-btn:hover{
+    text-decoration: none;
+    color: #2472bb;
+}
 
+.teacher-item{
+    margin-top: 20px;
+}
+.teacher-item>div{
+    display: none;
+}
+.teacher-item ul li{
+    float: left;
+    margin-bottom:20px;
+}
+.teacher-item ul li:nth-child(3n-1){
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.teacher-img{
+    width: 122px;
+    height: 174px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.teacher-img img{
+    width:100%;
+    vertical-align:middle;
+    height: 174px;
+}
+.teacher-text{
+    width: 250px;
+    margin: 10px 0 0 10px;
+}
+.teacher-text .name{
+    font-size: 18px;
+    color: #000;
+}
+.teacher-text p span{
+    font-weight: bold;
+    font-size: 14px;
+    color: #666;
+}
+.teacher-text .special{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /*截取两行*/
+    overflow: hidden;
+}
+
+.course,.grade,.special{
+    line-height: 24px;
+}
 
 
 

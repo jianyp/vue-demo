@@ -3,6 +3,9 @@
     .carousel-inner .carousel-item img{
         margin-top: -20px;
     }
+    .news-item > .news-itembox + .news-itembox>div{
+        float: left;
+    }
 }
 @media screen and (max-width:1200px){
     .choose{
@@ -44,7 +47,32 @@
     .mini-more-btn{
         display: block;
     }
+    .news,.study,.teacher{
+        padding-left: 30px;
+    }
 }
 @media screen and (max-width:768px){
-   
+    
+    .news-title {
+        margin-left: 0;
+        width: 100%;
+    }
+    .news-time{
+        margin-left: 0;
+    }
+    .news-itembox{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    .news-item > .news-itembox + .news-itembox>div{
+        margin-top: 10px;
+        clear: both;
+    }
+    .news-item > .news-itembox + .news-itembox>.news-title{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; /*截取两行*/
+        overflow: hidden;
+        white-space:normal;
+    }
 }
