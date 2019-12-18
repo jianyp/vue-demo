@@ -1,10 +1,15 @@
 @media screen and (max-width:1920px){
     
     .carousel-inner .carousel-item img{
-        margin-top: -20px;
     }
     .news-item > .news-itembox + .news-itembox>div{
         float: left;
+    }
+    .carousel-inner .carousel-item{
+        height: 480px;
+    }
+    .carousel-inner .carousel-item img{
+        height: 480px;
     }
 }
 @media screen and (max-width:1200px){
@@ -14,13 +19,7 @@
     .phone{
         display: none;
     }
-    header .row{
-        padding-left: 30px;
-    }
-    .row{
-        width: 100%;
-    }
-    
+   
     .footer-link{
         text-align: center;
     }
@@ -28,11 +27,17 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    .news,.study,.teacher{
-        padding-left: 30px;
+    .content,header{
+        padding: 0 20px;
+    } 
+    .carousel-inner .carousel-item{
+        height: auto;
     }
-    .teacher{
-        padding-right: 30px;
+    .carousel-inner .carousel-item img{
+        height: auto;
+    }
+    .sm-banner{
+        display: none;
     }
 }
 @media screen and (max-width:992px){
@@ -63,10 +68,13 @@
     .teacher .more-btn{
         display: none;
     }
-    .teacher .title{
+    .teacher .title ,.phone-num .title ,.link .title{
         width: 100%;
     }
-    
+
+    .phone-item{
+        justify-content:center;
+    }
 }
 @media screen and (max-width:768px){
     
@@ -91,5 +99,12 @@
         -webkit-line-clamp: 2; /*截取两行*/
         overflow: hidden;
         white-space:normal;
+    }
+    .img-nav-pic{
+        text-align: center;
+    }
+    .img-nav-pic img{
+        width: 80%;
+        margin-bottom: 20px;
     }
 }

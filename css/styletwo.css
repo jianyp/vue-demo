@@ -323,7 +323,6 @@ nav>ul>li.active .triangle-green{
 .content{
     max-width: 1200px;
     margin: auto;
-    margin-top: 40px;
 }
 /* 主体内容的绿色标题样式 */
 .content .title{
@@ -606,10 +605,11 @@ nav>ul>li.active .triangle-green{
 .img-nav{
     margin: 40px 0;
 }
-
+.img-nav-pic img{
+    width: 100%;
+}
 .sm-banner{
-    width: 400px;
-    height: 190px;
+    height: 184px;
     position: relative;
 }
 .sm-banner-img li{
@@ -617,7 +617,7 @@ nav>ul>li.active .triangle-green{
 }
 .sm-banner-img li img{
     width: 100%;
-    height: auto;
+    height: 184px;
 }
 .sm-banner-list{
     position: absolute;
@@ -668,7 +668,29 @@ nav>ul>li.active .triangle-green{
     color: #fff;
     display: none;
 }
+/* 服务热线 */
 
+.phone-item{
+    display: flex;
+    margin: 40px 0;
+}
+.phone-item img{
+    width: 30px;
+}
+.phone-item .number{
+    font-size: 20px;
+    color: #333;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+/* 友情链接 link */
+
+.link .fg{
+    background: #666;
+}
+.link-item{
+    margin: 15px 0;
+}
 
 /* footer start */
 .footer{
@@ -735,4 +757,8 @@ nav>ul>li.active .triangle-green{
 .wx-code img{
     width: 100%;
     height: auto;
+}
+
+.row{
+    box-sizing: border-box;
 }
